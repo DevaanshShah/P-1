@@ -1,9 +1,9 @@
 .login-container {
+  padding-top: 100px; /* Add padding to account for navbar height */
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
+  align-items: flex-start; /* Changed from center to flex-start */
   background-color: #1a1a2e;
 }
 

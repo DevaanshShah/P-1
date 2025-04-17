@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';  // Added Link import
 import '../styles/RoleSelection.css';
 
 const RoleSelection = () => {
@@ -8,8 +8,8 @@ const RoleSelection = () => {
   const handleRoleSelect = (role) => {
     if (role === 'venue') {
       navigate('/venue/dashboard');
-    } else if (role === 'artist') {
-      navigate('/artist/dashboard');
+    } else if (role === 'performer') {  // Changed from 'artist' to 'performer'
+      navigate('/performer/dashboard');
     } else if (role === 'audience') {
       navigate('/audience/dashboard');
     } else if (role === 'admin') {
@@ -31,7 +31,7 @@ const RoleSelection = () => {
           </div>
           <h3>Admin</h3>
           <p>Manage all events, users, and analytics for the comedy platform.</p>
-          <button className="select-btn" onClick={() => handleRoleSelect('admin')}>Select</button>
+          <button className="btn btn-primary" onClick={() => handleRoleSelect('admin')}>Select</button>
         </div>
         
         <div className="role-card">
@@ -40,7 +40,7 @@ const RoleSelection = () => {
           </div>
           <h3>Venue Manager</h3>
           <p>Manage venues, capacity details, and handle event approvals and bookings.</p>
-          <button className="select-btn" onClick={() => handleRoleSelect('venue')}>Select</button>
+          <button className="btn btn-primary" onClick={() => handleRoleSelect('venue')}>Select</button>
         </div>
         
         <div className="role-card">
@@ -48,8 +48,8 @@ const RoleSelection = () => {
             <span>🎤</span>
           </div>
           <h3>Performer</h3>
-          <p>Create profiles, submit show proposals, upload media, and manage your comedy career.</p>
-          <button className="select-btn" onClick={() => handleRoleSelect('artist')}>Select</button>
+          <p>Create profiles, submit show proposals, upload media, and manage your career.</p>
+          <button className="btn btn-primary" onClick={() => handleRoleSelect('performer')}>Select</button>
         </div>
         
         <div className="role-card">
@@ -58,7 +58,7 @@ const RoleSelection = () => {
           </div>
           <h3>Audience</h3>
           <p>Discover shows, book tickets, and enjoy the best live comedy experiences.</p>
-          <button className="select-btn" onClick={() => handleRoleSelect('audience')}>Select</button>
+          <button className="btn btn-primary" onClick={() => handleRoleSelect('audience')}>Select</button>
         </div>
       </div>
       

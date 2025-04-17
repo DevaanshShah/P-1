@@ -19,6 +19,18 @@ const VenueDashboard = () => {
 
   return (
     <div className="dashboard-container">
+      {/* Add venue manager header with search */}
+      <div className="venue-manager-header">
+        <h1>Venue Manager Dashboard</h1>
+        <div className="header-actions">
+          <div className="search-comedians">
+            <input type="text" placeholder="Find Comedians" />
+            </div>
+          <button className="btn btn-primary">Add New Venue</button>
+          <button className="btn btn-outline-light">View Details</button>
+        </div>
+      </div>
+
       <div className="dashboard-content">
         <div className="dashboard-grid">
           <div className="dashboard-card upcoming-shows">

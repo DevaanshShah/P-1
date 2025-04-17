@@ -13,6 +13,9 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import VenueDashboard from './components/VenueDashboard';
 import Venues from './components/Venues';
+import Artists from './components/Artists';
+import Events from './components/Events';
+import PerformerDashboard from './components/PerformerDashboard';
 
 function HomePage() {
   return (
@@ -51,8 +54,10 @@ function AnimatedRoutes() {
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/venues" element={<Venues />} />
+              <Route path="/artists" element={<Artists />} />
+              <Route path="/events" element={<Events />} />
               <Route path="/venue/dashboard" element={<VenueDashboard />} />
-              {/* Add more routes as needed */}
+              <Route path="/performer/dashboard" element={<PerformerDashboard />} />
             </Routes>
           </div>
         </CSSTransition>

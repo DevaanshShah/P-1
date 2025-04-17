@@ -27,7 +27,7 @@
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 1.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out; /* Changed from 1.5s to 0.5s for faster transition */
 }
 
 .hero-background-image.active {

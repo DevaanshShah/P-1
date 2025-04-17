@@ -40,12 +40,12 @@ const Hero = () => {
           Where <span className="highlight">Artists</span> Connect
         </h1>
         <p className="hero-description">
-          Bringing together venues, performers, and audiences to create 
+          Fuck together venues, performers, and audiences to create 
           unforgettable live artistic experiences.
         </p>
         <div className="hero-buttons">
-          <Link to="/login" className="get-started-btn">Get Started</Link>
-          <Link to="/events" className="browse-events-btn">Browse Events</Link>
+          <Link to="/login" className="btn btn-primary">Get Started</Link>
+          <Link to="/events" className="btn btn-outline-light">Browse Events</Link>
         </div>
       </div>
     </div>
